@@ -1,0 +1,75 @@
+html,
+body * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.App {
+  font-family: sans-serif;
+  padding: 2em;
+}
+
+.Autocomplete.root {
+  position: relative;
+  width: 350px;
+}
+
+.Autocomplete.root.loader:before {
+  content: "";
+  position: absolute;
+  top: 0.4em;
+  right: 0.4em;
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid black;
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  animation: spin 2s linear infinite;
+}
+
+.Autocomplete > .input {
+  width: 100%;
+  border: 1px solid black;
+  height: 2em;
+  padding: 0.5em;
+}
+
+.Autocomplete > .dropdown {
+  position: absolute;
+  top: 2.2em;
+  width: 100%;
+  border: 1px solid black;
+  max-height: 300px;
+  overflow: auto;
+}
+
+.Autocomplete > .dropdown > .item {
+  cursor: pointer;
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid lightgray;
+}
+
+.Autocomplete > .dropdown > .item:hover {
+  background-color: lightblue;
+}
+
+.Autocomplete > .dropdown > .item.notFound {
+  cursor: inherit;
+  color: grey;
+}
+
+.Autocomplete > .dropdown > .item.notFound:hover {
+  background-color: inherit;
+}

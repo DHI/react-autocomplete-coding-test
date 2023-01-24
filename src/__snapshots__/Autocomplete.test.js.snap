@@ -1,0 +1,208 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`first and second fetches fail: should not show any result 1`] = `
+<div
+  class="Autocomplete root"
+>
+  <input
+    class="input"
+    placeholder="Start typing to search..."
+    value="m"
+  />
+</div>
+`;
+
+exports[`first fetch fails in json call: should show the second fetch result 1`] = `
+<div
+  class="Autocomplete root"
+>
+  <input
+    class="input"
+    placeholder="Start typing to search..."
+    value="a"
+  />
+  <div
+    class="dropdown"
+  >
+    <div
+      class="item"
+    >
+      Austria
+    </div>
+  </div>
+</div>
+`;
+
+exports[`first fetch fails: should show the second fetch result 1`] = `
+<div
+  class="Autocomplete root"
+>
+  <input
+    class="input"
+    placeholder="Start typing to search..."
+    value="a"
+  />
+  <div
+    class="dropdown"
+  >
+    <div
+      class="item"
+    >
+      Austria
+    </div>
+  </div>
+</div>
+`;
+
+exports[`first fetch: after debouching, the loader should be visible 1`] = `
+<div
+  class="Autocomplete root loader"
+>
+  <input
+    class="input"
+    placeholder="Start typing to search..."
+    value="aust"
+  />
+</div>
+`;
+
+exports[`first fetch: debounce should prevent any update 1`] = `
+<div
+  class="Autocomplete root"
+>
+  <input
+    class="input"
+    placeholder="Start typing to search..."
+    value="aus"
+  />
+</div>
+`;
+
+exports[`first fetch: the first fetch should return the matched item 1`] = `
+<div
+  class="Autocomplete root"
+>
+  <input
+    class="input"
+    placeholder="Start typing to search..."
+    value="aust"
+  />
+  <div
+    class="dropdown"
+  >
+    <div
+      class="item"
+    >
+      Austria
+    </div>
+  </div>
+</div>
+`;
+
+exports[`from a value to an empty value: empty value should not update 1`] = `
+<div
+  class="Autocomplete root"
+>
+  <input
+    class="input"
+    placeholder="Start typing to search..."
+    value=""
+  />
+</div>
+`;
+
+exports[`item not found 1`] = `
+<div
+  class="Autocomplete root"
+>
+  <input
+    class="input"
+    placeholder="Start typing to search..."
+    value="rom"
+  />
+  <div
+    class="dropdown"
+  >
+    <div
+      class="item"
+    >
+      Romania
+    </div>
+  </div>
+</div>
+`;
+
+exports[`second fetch fails in json call: should show the first fetch result 1`] = `
+<div
+  class="Autocomplete root"
+>
+  <input
+    class="input"
+    placeholder="Start typing to search..."
+    value="m"
+  />
+  <div
+    class="dropdown"
+  >
+    <div
+      class="item"
+    >
+      Malta
+    </div>
+  </div>
+</div>
+`;
+
+exports[`second fetch fails: should show the first fetch result 1`] = `
+<div
+  class="Autocomplete root"
+>
+  <input
+    class="input"
+    placeholder="Start typing to search..."
+    value="m"
+  />
+  <div
+    class="dropdown"
+  >
+    <div
+      class="item"
+    >
+      Malta
+    </div>
+  </div>
+</div>
+`;
+
+exports[`second fetch: should display the not found message 1`] = `
+<div
+  class="Autocomplete root"
+>
+  <input
+    class="input"
+    placeholder="Start typing to search..."
+    value="xxx"
+  />
+  <div
+    class="dropdown"
+  >
+    <div
+      class="item notFound"
+    >
+      Country not found!
+    </div>
+  </div>
+</div>
+`;
+
+exports[`value delete: empty value, dropdown should not be open 1`] = `
+<div
+  class="Autocomplete root"
+>
+  <input
+    class="input"
+    placeholder="Start typing to search..."
+    value=""
+  />
+</div>
+`;
